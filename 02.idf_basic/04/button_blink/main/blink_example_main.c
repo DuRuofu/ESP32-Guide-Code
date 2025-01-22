@@ -41,8 +41,6 @@ void app_main(void)
     /* Configure the peripheral according to the LED type */
     configure_led();
 
-
-
     iot_button_register_cb(gpio_btn, BUTTON_SINGLE_CLICK, button_single_click_cb, NULL);
 
     while (1) {
